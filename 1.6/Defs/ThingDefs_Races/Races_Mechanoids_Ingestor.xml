@@ -13,6 +13,7 @@
 			<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
 			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
 		</statBases>
+		<uiIconPath>Things/Pawn/Mechanoid/Ingestor/IngestorIcon</uiIconPath>
 		<tools Inherit="False">
 			<li>
 				<label>head</label>

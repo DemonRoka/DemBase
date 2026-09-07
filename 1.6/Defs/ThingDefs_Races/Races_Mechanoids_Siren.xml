@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseMechanoidWalker">
 		<defName>APM_Mech_Siren</defName>
 		<label>Siren</label>
-		<description>Taking advantage of the fact that mechanoids have a psychic presence, the siren mechanoid has the ability to lure colonists toward itself, exposing them to the heat of battle. When controlled via a mechanitor, this mech can provide a mood and recreation boost to those nearby.</description>
+		<description>Taking advantage of the fact that mechanoids have a psychic presence, the siren mechanoid has the ability to lure colonists toward itself, exposing them to the heat of battle. When controlled via a mechanitor, this mech can provide a mood and recreation boost to those nearby. Thanks to its social skills, the siren can interact with prisoners.</description>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 			<MoveSpeed>4.3</MoveSpeed>
