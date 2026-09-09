@@ -48,10 +48,12 @@
 					<APM_Mech_Conqueror_AR>8</APM_Mech_Conqueror_AR>
 					<APM_Mech_Conqueror_DMR>6</APM_Mech_Conqueror_DMR>
 					<APM_Mech_Conqueror_SMG>6</APM_Mech_Conqueror_SMG>
-					<APM_Mech_Dynamo>2</APM_Mech_Dynamo>
 					<APM_Mech_Mantis>3</APM_Mech_Mantis>
 					<APM_Mech_Aegis>3</APM_Mech_Aegis>
 					<APM_Mech_Tinker>2</APM_Mech_Tinker>
+					<APM_Mech_Javelin>2</APM_Mech_Javelin>
+					<APM_Mech_Siren>2</APM_Mech_Siren>
+					<APM_Mech_Dynamo>2</APM_Mech_Dynamo>
 					<APM_Mech_Vassal>1</APM_Mech_Vassal>
 				</escorts>
 				<bossMultPerThreat>
