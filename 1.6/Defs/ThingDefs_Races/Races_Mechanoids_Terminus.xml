@@ -52,7 +52,7 @@
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_MechanitorRangeExtender">
 				<minRange>7.9</minRange>
-				<maxRange>15.4</maxRange>
+				<maxRange>19.4</maxRange>
 			</li>
 		</comps>
 		<killedLeavingsPlayerHostile>
