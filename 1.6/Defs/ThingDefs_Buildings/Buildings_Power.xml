@@ -35,14 +35,14 @@
 		</building>
 		<comps>
 			<li Class="ApexMechanoids.CompProperties_PowerPlantDynamo">
-				<basePowerConsumption>-5000</basePowerConsumption>
+				<basePowerConsumption>-2500</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
 				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
 				<overrideAncientTexPath>Things/Building/Dynamo/Dynamo_Ancient_Building</overrideAncientTexPath>
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>0.5</fuelConsumptionRate>
+				<fuelConsumptionRate>2.5</fuelConsumptionRate>
 				<fuelCapacity>30.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>

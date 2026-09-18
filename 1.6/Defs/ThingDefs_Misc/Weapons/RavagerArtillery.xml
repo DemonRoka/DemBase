@@ -38,8 +38,8 @@
 				<defaultProjectile>APM_ArtilleryProjectile</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
 				<burstShotCount>1</burstShotCount>
-				<range>80</range>
-				<forcedMissRadius>4.9</forcedMissRadius>
+				<range>220</range>
+				<forcedMissRadius>2.9</forcedMissRadius>
 				<warmupTime>3</warmupTime>
 				<noiseRadius>4</noiseRadius>
 				<isMortar>true</isMortar>

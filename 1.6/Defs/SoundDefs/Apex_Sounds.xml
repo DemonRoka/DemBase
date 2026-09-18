@@ -13,8 +13,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>
-					<max>42</max>
+					<min>25</min>
+					<max>32</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.9</min>
@@ -37,8 +37,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>
-					<max>42</max>
+					<min>25</min>
+					<max>32</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.9</min>
@@ -62,8 +62,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>
-					<max>42</max>
+					<min>25</min>
+					<max>32</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.9</min>
@@ -87,8 +87,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>
-					<max>42</max>
+					<min>25</min>
+					<max>32</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.9</min>
@@ -132,8 +132,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>45</min>
+					<max>52</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.9</min>
@@ -157,8 +157,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>45</min>
-					<max>52</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.895690</min>
@@ -182,12 +182,12 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>
-					<max>42</max>
+					<min>25</min>
+					<max>32</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.936413</min>
-					<max>1.042391</max>
+					<max>1.032391</max>
 				</pitchRange>
 			</li>
 		</subSounds>
@@ -206,12 +206,12 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>35</min>
-					<max>42</max>
+					<min>25</min>
+					<max>32</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.936413</min>
-					<max>1.042391</max>
+					<max>1.032391</max>
 				</pitchRange>
 			</li>
 		</subSounds>
@@ -230,8 +230,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -361,8 +361,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>45</min>
+					<max>52</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -386,8 +386,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -412,8 +412,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>45</min>
+					<max>52</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -437,8 +437,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>45</min>
+					<max>52</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -463,8 +463,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -488,8 +488,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -513,8 +513,8 @@
                     </li>
                 </grains>
                 <volumeRange>
-                    <min>55</min>
-                    <max>62</max>
+                    <min>45</min>
+                    <max>52</max>
                 </volumeRange>
                 <pitchRange>
                     <min>0.65</min>
@@ -539,8 +539,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -564,8 +564,8 @@
 					</li>
 				</grains>
 				<volumeRange>
-					<min>55</min>
-					<max>62</max>
+					<min>35</min>
+					<max>42</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.95</min>
@@ -589,8 +589,8 @@
                     </li>
                 </grains>
                 <volumeRange>
-                    <min>55</min>
-                    <max>65</max>
+                    <min>35</min>
+                    <max>45</max>
                 </volumeRange>
                 <pitchRange>
                     <min>0.85</min>
@@ -614,8 +614,8 @@
                     </li>
                 </grains>
                 <volumeRange>
-                    <min>55</min>
-                    <max>65</max>
+                    <min>35</min>
+                    <max>45</max>
                 </volumeRange>
                 <pitchRange>
                     <min>0.85</min>
@@ -696,8 +696,8 @@
 						<clipFolderPath>Jvln_launch</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>60.58823~60.58823</volumeRange>
-				<pitchRange>0.9082352~1.091765</pitchRange>
+				<volumeRange>40.58823~50.58823</volumeRange>
+				<pitchRange>0.9082252~1.091765</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -734,7 +734,7 @@
 						<clipFolderPath>JvlnMissile_Explode</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>80~80</volumeRange>
+				<volumeRange>40~60</volumeRange>
 				<pitchRange>0.8516304~1.254348</pitchRange>
 			</li>
 		</subSounds>
