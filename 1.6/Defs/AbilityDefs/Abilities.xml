@@ -492,7 +492,7 @@
 		<description>Ravager overcharges its artillery and launches a single heavy shell that splits into three energy blasts while still in flight.</description>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<iconPath>UI/Starfall</iconPath>
-		<cooldownTicksRange>5000</cooldownTicksRange>
+		<cooldownTicksRange>8000</cooldownTicksRange>
 		<hostile>true</hostile>
 		<writeCombatLog>true</writeCombatLog>
 		<aiCanUse>true</aiCanUse>
@@ -507,7 +507,7 @@
 		<verbProperties>
 			<verbClass>ApexMechanoids.Verb_CastStarfall</verbClass>
 			<warmupTime>4.8</warmupTime>
-			<range>80</range>
+			<range>140</range>
 			<drawAimPie>true</drawAimPie>
 			<requireLineOfSight>false</requireLineOfSight>
 			<noiseRadius>4</noiseRadius>
