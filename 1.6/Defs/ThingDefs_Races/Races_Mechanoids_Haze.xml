@@ -23,8 +23,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>18.5</power>
-				<cooldownTime>2.9</cooldownTime>
+				<power>6</power>
+				<cooldownTime>2.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -33,8 +33,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>20.5</power>
-				<cooldownTime>2.9</cooldownTime>
+				<power>14.5</power>
+				<cooldownTime>1.9</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>
@@ -43,8 +43,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>20.5</power>
-				<cooldownTime>2.9</cooldownTime>
+				<power>14.5</power>
+				<cooldownTime>1.9</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			</li>

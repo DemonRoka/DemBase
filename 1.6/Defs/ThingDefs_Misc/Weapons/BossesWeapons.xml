@@ -38,7 +38,7 @@
 		</tools>
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
+				<usableWithShields>false</usableWithShields>
 				<weaponDraftedDrawOffsets>
 					<north><drawOffset>(-0.30, 0.00, 0.15)</drawOffset><angleOffset>-120</angleOffset></north>
 					<east><drawOffset>(0.50, 0.00, 0.15)</drawOffset><angleOffset>-60</angleOffset></east>
@@ -185,7 +185,7 @@
 		</tools>
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
+				<usableWithShields>false</usableWithShields>
 				<weaponDraftedDrawOffsets>
 					<north><drawOffset>(-0.55, 0.00, 0.30)</drawOffset><angleOffset>130</angleOffset></north>
 					<east><drawOffset>(0.60, 0.00, 0.30)</drawOffset><angleOffset>-50</angleOffset></east>

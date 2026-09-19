@@ -67,7 +67,7 @@
 		</comps>
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
+				<usableWithShields>false</usableWithShields>
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.30, 0.00, 0.30)</drawOffset>

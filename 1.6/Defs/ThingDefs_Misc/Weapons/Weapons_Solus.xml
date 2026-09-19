@@ -15,14 +15,14 @@
 		<relicChance>0</relicChance>
 	    <generateCommonality>2</generateCommonality>
 		<statBases>
-			<MarketValue>5000</MarketValue>
+			<MarketValue>6000</MarketValue>
 			<Mass>9.5</Mass>
 			<AccuracyTouch>1.0</AccuracyTouch>
 			<AccuracyShort>1.0</AccuracyShort>
 			<AccuracyMedium>1.0</AccuracyMedium>
 			<AccuracyLong>1.0</AccuracyLong>
 			<RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
-			<WorkToMake>34000</WorkToMake>
+			<WorkToMake>44000</WorkToMake>
 		</statBases>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -33,6 +33,25 @@
 		<weaponTags Inherit="False">
 			<li>APM_WeaponSolus</li>
 		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 		<comps>
 			      <li>
         <compClass>CompQuality</compClass>
@@ -61,7 +80,7 @@
 		</verbs>
 			<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
+				<usableWithShields>false</usableWithShields>
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0,0,-0.1)</drawOffset>
@@ -113,7 +132,7 @@
 			<speed>5</speed>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Burn</damageDef>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<stoppingPower>0</stoppingPower>
 			<useGraphicClass>true</useGraphicClass>
 		</projectile>

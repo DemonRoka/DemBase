@@ -19,14 +19,14 @@
 			<li>APM_WeaponPlasmaWhip</li>
 		</weaponTags>
 		<statBases>
-			<MarketValue>1800</MarketValue>
+			<MarketValue>1400</MarketValue>
 			<Mass>1.2</Mass>
 			<AccuracyTouch>0.55</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.45</AccuracyMedium>
 			<AccuracyLong>0.30</AccuracyLong>
 			<RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
-			<WorkToMake>16000</WorkToMake>
+			<WorkToMake>19000</WorkToMake>
 		</statBases>
 		<verbs>
 			<li>
@@ -43,6 +43,11 @@
 				</targetParams>
 			</li>
 		</verbs>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaExpandedFramework">
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
 		<comps>
 			<li>
         <compClass>CompQuality</compClass>

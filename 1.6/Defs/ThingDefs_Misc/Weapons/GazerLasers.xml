@@ -68,7 +68,7 @@
 		</verbs>
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
+				<usableWithShields>false</usableWithShields>
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.05,0.0,0.15)</drawOffset>

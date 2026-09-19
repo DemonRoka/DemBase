@@ -14,6 +14,25 @@
 		<tradeability>None</tradeability>
 		<destroyOnDrop>true</destroyOnDrop>
 		<relicChance>0</relicChance>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
 		<statBases>
 			<MarketValue>9999</MarketValue>
 			<AccuracyTouch>0.7</AccuracyTouch>
@@ -61,7 +80,7 @@
 		</verbs>
 		<modExtensions>
 			<li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-				<usableWithShields>true</usableWithShields>
+				<usableWithShields>false</usableWithShields>
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0,1,0)</drawOffset>
