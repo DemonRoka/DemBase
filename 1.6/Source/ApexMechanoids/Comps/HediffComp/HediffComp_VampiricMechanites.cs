@@ -24,15 +24,15 @@ namespace ApexMechanoids
 		public int maxCharges = 25;
 
 		// Ticks between self-repair attempts.
-		public int healIntervalTicks = 30;
+		public int healIntervalTicks = 600;
 
 		// HP restored per heal tick. One heal tick consumes one charge.
-		public float healAmountPerTick = 4f;
+		public float healAmountPerTick = 0.5f;
 
 		// How many heal ticks a single charge is worth. Each heal tick heals
 		// healAmountPerTick HP and consumes one charge, so one charge restores
 		// (healTicksPerCharge * healAmountPerTick) HP before being spent.
-		public int healTicksPerCharge = 5;
+		public int healTicksPerCharge = 300;
 
 		// Whether a single charge can regrow a missing body part.
 		public bool restoreMissingParts = true;
@@ -51,10 +51,17 @@ namespace ApexMechanoids
 
 		private int healTimer;
 
-		// Pawns that currently carry this comp. Used as a cheap negative filter so the
-		// global damage patch does not scan every attacker's hediff list on every hit.
-		// Weak keys so entries for dead/removed pawns are collected automatically.
-		private static readonly ConditionalWeakTable<Pawn, object> pawnsWithVampiric = new ConditionalWeakTable<Pawn, object>();
+		// Cached "is the host currently damaged" flag. Lets the per-pulse tick skip
+		// the hediff scan entirely when there is nothing to heal. Set true on damage
+		// (see VampiricMechanites_DamagePatch) and re-evaluated after each heal attempt.
+		// Internal so the sibling damage-patch class can flip it.
+		internal bool cachedDamaged;
+
+		// Pawns that currently carry this comp, mapped directly to their comp instance so
+		// the global damage patch resolves it in O(1) without scanning every hediff on
+		// every hit. Weak keys let dead/removed pawns be collected; the comp is also
+		// explicitly removed in CompPostPostRemoved when its hediff is cured.
+		private static readonly ConditionalWeakTable<Pawn, HediffComp_VampiricMechanites> pawnsWithVampiric = new ConditionalWeakTable<Pawn, HediffComp_VampiricMechanites>();
 
 		// Victims already credited for a down, so a still-downed pawn is not repeatedly
 		// banked by every follow-up hit. Weak keys avoid holding victims alive.
@@ -66,10 +73,27 @@ namespace ApexMechanoids
 		public override void CompPostMake()
 		{
 			base.CompPostMake();
-			if (Pawn != null && !pawnsWithVampiric.TryGetValue(Pawn, out _))
+			if (Pawn != null)
 			{
-				pawnsWithVampiric.Add(Pawn, null);
+				// Always refresh: the hediff may have been removed and re-added,
+				// in which case this is a different comp instance.
+				pawnsWithVampiric.Remove(Pawn);
+				pawnsWithVampiric.Add(Pawn, this);
 			}
+			cachedDamaged = IsDamaged();
+		}
+
+		// Whether the host currently has damage worth repairing. Uses vanilla's
+		// natural-healing check for injuries and our own missing-part test (vanilla
+		// never regrows missing parts on its own).
+		private bool IsDamaged()
+		{
+			HediffSet hediffSet = Pawn.health.hediffSet;
+			if (Props.restoreMissingParts && hediffSet.GetMissingPartsCommonAncestors().Count > 0)
+			{
+				return true;
+			}
+			return hediffSet.HasNaturallyHealingInjury();
 		}
 
 		public override void CompPostTick(ref float severityAdjustment)
@@ -87,7 +111,16 @@ namespace ApexMechanoids
 			}
 			healTimer = Props.healIntervalTicks;
 
-			TryHealOnce();
+			// Nothing to repair: skip the hediff scan entirely until damage occurs.
+			if (!cachedDamaged)
+			{
+				return;
+			}
+
+			// TryHealOnce returns true only while something was actually repaired,
+			// which is exactly the "still damaged" condition, so reuse it to refresh
+			// the cache without a second hediff scan per pulse.
+			cachedDamaged = TryHealOnce();
 		}
 
 		// Spends one repair attempt's worth of charges. Returns true if anything was repaired.
@@ -130,7 +163,10 @@ namespace ApexMechanoids
 
 			if (healed)
 			{
-				charges = Mathf.Max(0, charges - 1);
+				// One charge funds healTicksPerCharge heal pulses. Consume it
+				// fractionally so a single charge lasts many pulses instead of
+				// being spent on the very first one.
+				charges = Mathf.Max(0, charges - 1f / Props.healTicksPerCharge);
 			}
 			return healed;
 		}
@@ -149,31 +185,30 @@ namespace ApexMechanoids
 			base.CompExposeData();
 			Scribe_Values.Look(ref charges, "vampiricCharges", 0);
 			Scribe_Values.Look(ref healTimer, "vampiricHealTimer", 0);
+			// Derive from current state rather than persisting it.
+			cachedDamaged = IsDamaged();
 		}
 
-		public override string CompTipStringExtra => "APM_VampiricCharges".Translate(charges, Props.maxCharges, charges * Props.healTicksPerCharge);
+		public override string CompTipStringExtra => "APM_VampiricCharges".Translate(charges, Props.maxCharges, charges * Props.healTicksPerCharge * Props.healAmountPerTick);
 
-		// Finds the active comp on a given pawn (used by the damage patch).
+		// Resolves the comp on a pawn in O(1) via the lookup table (used by the damage patch).
 		public static HediffComp_VampiricMechanites GetOn(Pawn pawn)
 		{
-			if (pawn == null || pawn.health == null || !pawnsWithVampiric.TryGetValue(pawn, out _))
+			if (pawn == null || pawn.health == null)
 			{
 				return null;
 			}
-			foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+			pawnsWithVampiric.TryGetValue(pawn, out HediffComp_VampiricMechanites comp);
+			return comp;
+		}
+
+		public override void CompPostPostRemoved()
+		{
+			base.CompPostPostRemoved();
+			if (Pawn != null)
 			{
-				if (hediff is HediffWithComps withComps && withComps.comps != null)
-				{
-					foreach (HediffComp comp in withComps.comps)
-					{
-						if (comp is HediffComp_VampiricMechanites vampiric)
-						{
-							return vampiric;
-						}
-					}
-				}
+				pawnsWithVampiric.Remove(Pawn);
 			}
-			return null;
 		}
 	}
 
@@ -184,6 +219,19 @@ namespace ApexMechanoids
 		[HarmonyPostfix]
 		public static void PostApplyDamage(Pawn_HealthTracker __instance, DamageInfo dinfo, float totalDamageDealt)
 		{
+			// The host itself took damage: flag it so the heal tick will scan and
+			// repair. Placed before the instigator checks so environmental damage
+			// (null instigator) is also caught.
+			Pawn victim = __instance.pawn;
+			if (victim != null)
+			{
+				HediffComp_VampiricMechanites victimComp = HediffComp_VampiricMechanites.GetOn(victim);
+				if (victimComp != null)
+				{
+					victimComp.cachedDamaged = true;
+				}
+			}
+
 			if (dinfo.Instigator == null)
 			{
 				return;
@@ -199,7 +247,6 @@ namespace ApexMechanoids
 				return;
 			}
 
-			Pawn victim = __instance.pawn;
 			if (victim == attacker)
 			{
 				return;
