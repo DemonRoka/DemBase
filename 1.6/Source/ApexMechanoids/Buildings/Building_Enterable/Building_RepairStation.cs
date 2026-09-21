@@ -241,7 +241,7 @@ namespace ApexMechanoids
             {
                 return false;
             }
-            if (pawn.Drafted || HasEnterBuildingJobForThis(pawn) || IsPawnClaimedByAnyRepairStation(pawn, this) || IsPawnBeingRepairedByPlayerColonist(pawn))
+            if (pawn.Drafted || HasEnterBuildingJobForThis(pawn) || IsPawnClaimedByAnyRepairStation(pawn, this) || IsPawnBeingRepairedByPlayer(pawn))
             {
                 return false;
             }
@@ -410,10 +410,10 @@ namespace ApexMechanoids
             }
 
             CompMechRepairable repairable = pawn.TryGetComp<CompMechRepairable>();
-            return repairable != null && repairable.autoRepair && !IsPawnBeingRepairedByPlayerColonist(pawn);
+            return repairable != null && repairable.autoRepair && !IsPawnBeingRepairedByPlayer(pawn);
         }
 
-        private static bool IsPawnBeingRepairedByPlayerColonist(Pawn pawn)
+        private static bool IsPawnBeingRepairedByPlayer(Pawn pawn)
         {
             if (pawn == null || pawn.Map == null)
             {
@@ -424,13 +424,25 @@ namespace ApexMechanoids
             for (int i = 0; i < playerPawns.Count; i++)
             {
                 Pawn worker = playerPawns[i];
-                if (worker == null || worker == pawn || worker.Dead || worker.Downed || !worker.IsColonist)
+                if (worker == null || worker == pawn || worker.Dead || worker.Downed)
                 {
                     continue;
                 }
 
                 Job job = worker.CurJob;
-                if (job != null && job.def == JobDefOf.RepairMech && job.targetA.Thing == pawn)
+                if (job == null || job.targetA.Thing != pawn)
+                {
+                    continue;
+                }
+
+                // A colonist / Mechinator doing the vanilla mech-repair job.
+                if (worker.IsColonist && job.def == JobDefOf.RepairMech)
+                {
+                    return true;
+                }
+
+                // The Apex Tinker mech uses a custom repair job instead of JobDefOf.RepairMech.
+                if (TinkerRepairUtility.IsTinker(worker) && job.def == ApexDefsOf.APM_RepairMech)
                 {
                     return true;
                 }
