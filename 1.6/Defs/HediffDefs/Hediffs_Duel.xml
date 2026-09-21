@@ -16,7 +16,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<disappearsAfterTicks>1600</disappearsAfterTicks>
 				<!--The same as duel mental state-->
 				<showRemainingTime>True</showRemainingTime>
 			</li>
@@ -39,10 +39,12 @@
 					<MoveSpeed>0.10</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.95</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.95</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.96</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.96</IncomingDamageFactor>
 					<MeleeDPS>1.05</MeleeDPS>
 					<ShootingAccuracyPawn>1.03</ShootingAccuracyPawn>
+					<ArmorRating_Sharp>1.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.05</ArmorRating_Blunt>
 				</statFactors>
 			</li>
 			<!-- 2 Wins -->
@@ -54,12 +56,12 @@
 					<MoveSpeed>0.18</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.85</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.85</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.92</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.92</IncomingDamageFactor>
 					<MeleeDPS>1.12</MeleeDPS>
 					<ShootingAccuracyPawn>1.06</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.06</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.11</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.11</ArmorRating_Blunt>
 				</statFactors>
 			</li>
 			<!-- 3 Wins -->
@@ -71,12 +73,12 @@
 					<MoveSpeed>0.26</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.75</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.88</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.88</IncomingDamageFactor>
 					<MeleeDPS>1.20</MeleeDPS>
 					<ShootingAccuracyPawn>1.10</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.12</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.12</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.17</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.17</ArmorRating_Blunt>
 				</statFactors>
 			</li>
 			<!-- 4 Wins -->
@@ -88,12 +90,12 @@
 					<MoveSpeed>0.35</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.65</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.63</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.84</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.84</IncomingDamageFactor>
 					<MeleeDPS>1.30</MeleeDPS>
 					<ShootingAccuracyPawn>1.16</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.18</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.18</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.23</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.23</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.85</RangedCooldownFactor>
 					<AimingDelayFactor>0.85</AimingDelayFactor>
 				</statFactors>
@@ -107,12 +109,12 @@
 					<MoveSpeed>0.45</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.50</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.50</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.80</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.80</IncomingDamageFactor>
 					<MeleeDPS>1.40</MeleeDPS>
 					<ShootingAccuracyPawn>1.24</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.24</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.29</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.29</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.70</RangedCooldownFactor>
 					<AimingDelayFactor>0.70</AimingDelayFactor>
 				</statFactors>
@@ -126,12 +128,12 @@
 					<MoveSpeed>0.55</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.40</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.40</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.76</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.76</IncomingDamageFactor>
 					<MeleeDPS>1.48</MeleeDPS>
 					<ShootingAccuracyPawn>1.32</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.30</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.30</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.35</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.55</RangedCooldownFactor>
 					<AimingDelayFactor>0.55</AimingDelayFactor>
 				</statFactors>
@@ -145,12 +147,12 @@
 					<MoveSpeed>0.65</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.32</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.32</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.72</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.72</IncomingDamageFactor>
 					<MeleeDPS>1.56</MeleeDPS>
 					<ShootingAccuracyPawn>1.40</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.36</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.36</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.41</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.41</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.40</RangedCooldownFactor>
 					<AimingDelayFactor>0.40</AimingDelayFactor>
 				</statFactors>
@@ -164,12 +166,12 @@
 					<MoveSpeed>0.75</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.26</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.26</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.68</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.68</IncomingDamageFactor>
 					<MeleeDPS>1.64</MeleeDPS>
 					<ShootingAccuracyPawn>1.48</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.42</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.42</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.47</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.47</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.32</RangedCooldownFactor>
 					<AimingDelayFactor>0.32</AimingDelayFactor>
 				</statFactors>
@@ -183,12 +185,12 @@
 					<MoveSpeed>0.85</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.20</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.20</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.64</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.64</IncomingDamageFactor>
 					<MeleeDPS>1.72</MeleeDPS>
 					<ShootingAccuracyPawn>1.56</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.48</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.48</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.52</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.52</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.25</RangedCooldownFactor>
 					<AimingDelayFactor>0.25</AimingDelayFactor>
 				</statFactors>
@@ -202,12 +204,12 @@
 					<MoveSpeed>0.95</MoveSpeed>
 				</statOffsets>
 				<statFactors>
-					<MeleeCooldownFactor>0.15</MeleeCooldownFactor>
-					<IncomingDamageFactor>0.15</IncomingDamageFactor>
+					<MeleeCooldownFactor>0.60</MeleeCooldownFactor>
+					<IncomingDamageFactor>0.60</IncomingDamageFactor>
 					<MeleeDPS>1.80</MeleeDPS>
 					<ShootingAccuracyPawn>1.64</ShootingAccuracyPawn>
-					<ArmorRating_Sharp>1.54</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.54</ArmorRating_Blunt>
+					<ArmorRating_Sharp>1.56</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.56</ArmorRating_Blunt>
 					<RangedCooldownFactor>0.18</RangedCooldownFactor>
 					<AimingDelayFactor>0.18</AimingDelayFactor>
 				</statFactors>
@@ -215,7 +217,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.1</severityPerDay>
+				<severityPerDay>-0.05</severityPerDay>
 			</li>
 		</comps>
 	</HediffDef>

@@ -35,7 +35,7 @@
 			</buildingTags>
 			<ai_chillDestination>false</ai_chillDestination>
 			<forcedCostLeavings>
-				<li>APM_PsyfluxChip</li>
+				<li>APM_OcularChip</li>
 			</forcedCostLeavings>
 		</building>
 		<designationCategory>Biotech</designationCategory>
@@ -49,7 +49,7 @@
 		<costList>
 			<Steel>450</Steel>
 			<Plasteel>100</Plasteel>
-			<APM_PsyfluxChip>1</APM_PsyfluxChip>
+			<APM_OcularChip>1</APM_OcularChip>
 		</costList>
 		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		<comps>

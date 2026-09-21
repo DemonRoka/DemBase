@@ -101,7 +101,8 @@
 		<label>tinker</label>
 		<race>APM_Mech_Tinker</race>
 		<combatPower>100</combatPower>
-		<allowInMechClusters>false</allowInMechClusters>
+		<maxPerGroup>2</maxPerGroup>
+		<allowInMechClusters>true</allowInMechClusters>
 		<lifeStages>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<bodyGraphicData>
