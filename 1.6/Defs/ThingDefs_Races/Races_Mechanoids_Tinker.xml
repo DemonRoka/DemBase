@@ -14,7 +14,7 @@
 			<MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.66</MechEnergyLossPerHP>
 			<MechRemoteShieldDistance>9.9</MechRemoteShieldDistance>
 			<MechRemoteShieldEnergy>200</MechRemoteShieldEnergy>
-			<MechRepairSpeed>3.2</MechRepairSpeed>
+			<MechRepairSpeed>13.2</MechRepairSpeed>
 			<ConstructionSpeed>2.8</ConstructionSpeed>
 		</statBases>
 		<tools>
