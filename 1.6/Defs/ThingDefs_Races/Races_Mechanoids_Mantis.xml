@@ -71,8 +71,8 @@
 		<label>mantis</label>
 		<race>APM_Mech_Mantis</race>
 		<combatPower>320</combatPower>
-		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">2</maxPerGroup>
-		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.48</controlGroupPortraitZoom>
+		<maxPerGroup>2</maxPerGroup>
+		<controlGroupPortraitZoom>0.48</controlGroupPortraitZoom>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -104,6 +104,5 @@
 		<abilities>
 			<li>APM_Bladehopp</li>
 		</abilities>
-		<controlGroupPortraitZoom>0.9</controlGroupPortraitZoom>
 	</PawnKindDef>
 </Defs>

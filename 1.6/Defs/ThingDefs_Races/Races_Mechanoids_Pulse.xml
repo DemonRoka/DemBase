@@ -74,8 +74,8 @@
 		<label>pulse</label>
 		<race>APM_Mech_Pulse</race>
 		<combatPower>240</combatPower>
-		<maxPerGroup MayRequire="Ludeon.Rimworld.Biotech">3</maxPerGroup>
-		<controlGroupPortraitZoom MayRequire="Ludeon.Rimworld.Biotech">0.65</controlGroupPortraitZoom>
+		<maxPerGroup>3</maxPerGroup>
+		<controlGroupPortraitZoom>0.65</controlGroupPortraitZoom>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -105,7 +105,6 @@
 			</li>
 		</lifeStages>
 		<weaponMoney>99999~99999</weaponMoney>
-		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
 		<weaponTags>
 			<li>APM_WeaponPulseShotgun</li>
 		</weaponTags>

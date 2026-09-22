@@ -52,7 +52,6 @@
 				     end of the warmup. With it false the missile spawns at the launcher and flies the
 				     curve. Burst count is 1, so nothing else depends on it. -->
 				<stopBurstWithoutLos>false</stopBurstWithoutLos>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCast>Jvln_Launch</soundCast>
 				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>

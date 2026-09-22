@@ -69,7 +69,7 @@
       <eastOffset>(0.8,0.5)</eastOffset>
       <southOffset>(0,-0.3)</southOffset>
       <westOffset>(-0.8,0.5)</westOffset>
-      <fireCommandIconPath>UI/GazerBeam_UI</fireCommandIconPath>
+      <fireCommandIconPath>UI/SunRay</fireCommandIconPath>
       <cancelCommandIconPath>UI/Designators/Cancel</cancelCommandIconPath>
     </li>
     <li Class="CompProperties_Breakdownable" />

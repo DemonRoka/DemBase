@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<!-- ==================== THING DEF ==================== -->
-	<ThingDef ParentName="BaseMechanoid">
+	<ThingDef ParentName="BaseMechanoid" Name="APM_Mech_Dominus_Base" Abstract="True">
 		<defName>APM_Mech_Dominus</defName>
 		<label>Dominus</label>
 		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth nation of Rome, the Dominus provides considerable buffs to nearby allies and personally challenges perceived threats in 1v1 melee combat. The pure force of its determination manifests in a psychic maelstrom forming around those it challenges, summoning a shield generator and increasing damage taken until one stands victorious or it exhausts its will after a certain amount of time. If this occurs, both duelists will be significantly weakened for a period. If a victor emerges, the opposite will occur. It can alternatively channel its will into a temporary wave of energy for its allies. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</description>
@@ -79,10 +79,21 @@
 		</butcherProducts>
 	</ThingDef>
 
+	<ThingDef ParentName="APM_Mech_Dominus_Base">
+		<defName>APM_Mech_Dominus</defName>
+		<label>Dominus</label>
+		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth nation of Rome, the Dominus provides considerable buffs to nearby allies and personally challenges perceived threats in 1v1 melee combat. The pure force of its determination manifests in a psychic maelstrom forming around those it challenges, summoning a shield generator and increasing damage taken until one stands victorious or it exhausts its will after a certain amount of time. If this occurs, both duelists will be significantly weakened for a period. If a victor emerges, the opposite will occur. It can alternatively channel its will into a temporary wave of energy for its allies. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</description>
+	</ThingDef>
+
+	<ThingDef ParentName="APM_Mech_Dominus_Base">
+		<defName>APM_Mech_DominusB</defName>
+		<label>Dominus</label>
+		<description>Three powerful mechanoid types were created by an Archotech mind in an attempt to create a central commander of all mechanoid forces. Influenced by the Old Earth nation of Rome, the Dominus provides considerable buffs to nearby allies and personally challenges perceived threats in 1v1 melee combat. The pure force of its determination manifests in a psychic maelstrom forming around those it challenges, summoning a shield generator and increasing damage taken until one stands victorious or it exhausts its will after a certain amount of time. If this occurs, both duelists will be significantly weakened for a period. If a victor emerges, the opposite will occur. It can alternatively channel its will into a temporary wave of energy for its allies. Additionally, mechanitors can extend their command range in a radius around this mech if under their control.</description>
+	</ThingDef>
+
 	<!-- ==================== PAWN KINDS ==================== -->
 	<PawnKindDef ParentName="BaseMechanoidKind" Name="APM_PawnKind_Dominus_Base" Abstract="True">
 		<label>dominus</label>
-		<race>APM_Mech_Dominus</race>
 		<combatPower>600</combatPower>
 		<maxPerGroup>3</maxPerGroup>
 		<isBoss>true</isBoss>
@@ -96,6 +107,7 @@
 	<!-- Player -->
 	<PawnKindDef ParentName="APM_PawnKind_Dominus_Base">
 		<defName>APM_Mech_Dominus</defName>
+		<race>APM_Mech_Dominus</race>
 		<label>dominus</label>
 		<lifeStages>
 			<li>
@@ -138,6 +150,7 @@
 	<PawnKindDef ParentName="APM_PawnKind_Dominus_Base">
 		<defName>APM_Mech_Dominus_Boss</defName>
 		<label>dominus</label>
+		<race>APM_Mech_DominusB</race>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

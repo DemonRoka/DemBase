@@ -104,9 +104,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<comps>
-			<li Class="CompProperties_Biocodable" />
-		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
@@ -203,9 +200,6 @@
 				</li>
 			</options>
 		</colorGenerator>
-		<comps>
-			<li Class="CompProperties_Biocodable" />
-		</comps>
 		<thingSetMakerTags>
 			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
