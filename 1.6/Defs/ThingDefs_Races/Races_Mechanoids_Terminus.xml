@@ -222,14 +222,14 @@
 		<label>overdrive</label>
 		<description>Terminus diverts power inward and briefly enters an overdriven combat state. While active, it sheds its cape, strikes harder, recovers between swings faster and becomes harder to stagger.</description>
 		<iconPath>UI/Overdrive</iconPath>
-		<cooldownTicksRange>20000</cooldownTicksRange>
+		<cooldownTicksRange>8000</cooldownTicksRange>
 		<targetRequired>false</targetRequired>
 		<hostile>false</hostile>
 		<aiCanUse>true</aiCanUse>
 		<showCastingProgressBar>true</showCastingProgressBar>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<statBases>
-			<Ability_Duration>30</Ability_Duration>
+			<Ability_Duration>45</Ability_Duration>
 		</statBases>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -327,7 +327,7 @@
 					</li>
 				</capMods>
 				<statFactors>
-					<MeleeDamageFactor>1.4</MeleeDamageFactor>
+					<MeleeDamageFactor>1.6</MeleeDamageFactor>
 					<MeleeCooldownFactor>0.65</MeleeCooldownFactor>
 					<StaggerDurationFactor>0.35</StaggerDurationFactor>
 					<EMPResistance>0.98</EMPResistance>
@@ -395,7 +395,7 @@
 		<label>severing edge</label>
 		<projectile>
 			<damageDef>RangedStab</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>46</damageAmountBase>
 			<armorPenetrationBase>1</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>12</speed>
